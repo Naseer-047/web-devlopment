@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -53,4 +54,61 @@
 #box4 {
     order: 4;
     background-color: antiquewhite;
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 900px;
+    width: 1100px;
+    margin: 5px;
+    border: 2px solid;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* flex-direction:  row-reverse; */
+    /* flex-direction: column-reverse; */
+    background-color: lavender;
+    /* justify-content: center; /* items moves respectvly to x axis */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around;
+    justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* align-items: center?   align-items: center;
+    /* align-content: center; */
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid;
+}
+
+#box1 {
+    background-color: red;
+    order: 2;
+}
+
+#box2 {
+    background-color: blue;
+    order: 3;
+}
+
+#box3 {
+    background-color: green;
+    /* align-self: flex-start; target a specific element or box */
+    /* flex-shrink:0 ; */
+    /* flex-grow: 3; */
+    order: 1;
+}
+
+#box4 {
+    order: 4;
+    background-color: antiquewhite;
+>>>>>>> a7dadbd96347662d9fb32590ee229eae9c875a34
 }

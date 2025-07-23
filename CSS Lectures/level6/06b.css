@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container{
     display: grid;
     grid-template-columns: 50px 50px;
@@ -26,4 +27,34 @@
     grid-row: 2/2;
     background-color: lightpink;
     margin: 2px;
+=======
+.container{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+#box1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: lightblue;
+    margin: 2px;
+}
+#box2{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    background-color: lightgreen;
+    margin: 2px;
+}
+#box3{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: lightpink;
+    margin: 2px;
+}
+#box4{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: lightpink;
+    margin: 2px;
+>>>>>>> a7dadbd96347662d9fb32590ee229eae9c875a34
 }
