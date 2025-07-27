@@ -1,0 +1,11 @@
+ .btn1{
+      padding:5px 40px ;
+      background-color: lightgreen;
+      border-radius: 10px;
+      border: 2px solid lightgreen;
+    }
+    .btn2{
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px 15px;
+    }
