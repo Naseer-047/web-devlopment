@@ -1,0 +1,7 @@
+{
+  "livePreview.debugOnExternalPreview": true,
+  "livePreview.showServerStatusNotifications": true,
+  "livePreview.tasks.runTaskWithExternalPreview": false,
+  "livePreview.openPreviewTarget": "External Browser",
+  "livePreview.customExternalBrowser": "Chrome"
+}
