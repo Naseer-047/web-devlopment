@@ -20,23 +20,31 @@
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required><br><br>
 
+            <label for="gender"> enter your gender:</label>
+            <input type="text" id="gender" name="gender" required><br><br>
+
             <label for="age">enter your age:</label>
             <input type="number" id="age" name="age" required><br><br>
 
             <label for="from">From:</label>
-            <input type="text" id="from" name="from" required><br><br>
-
+             <select id="from" name="from">
+                <option value="select">--select--</option>
+                <option value="banglore">banglore</option>
+                <option value="mandya">mandya</option>
+                <option value="mysore">mysore</option>
+            </select>
+<br><br>
             <label for="to">To:</label>
-            <input type="text" id="to" name="to" required><br><br>
+          <select id="to" name="to">
+                <option value="selet">--select--</option>
+                <option value="banglore">banglore</option>
+                <option value="mandya">mandya</option>
+                <option value="mysore">mysore</option>
+            </select>
 
-            <label for="class">Class:</label>
-            <select id="class" name="class">
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first">First Class</option>
-            </select><br><br>
+         <br><br>
 
-           <a href="traindetails.htm" onclick="alert(userName);">See available trains</a>
+           <a href="traindetails.htm" >See available trains</a><br><br>
         </form>
         </div>
     </main>

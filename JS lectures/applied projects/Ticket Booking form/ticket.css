@@ -3,7 +3,6 @@
     padding:0;
 }
 body{
-    background: url(./images/bg.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,11 +12,14 @@ body{
 }
 h1{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+    color: blue;
 }
 .contentbox{
 height: max-content;
-width: auto;
+width: 400px;
 display: flex;
 flex-direction: column;
 background-color:#ffff;
@@ -39,6 +41,9 @@ input,select{
     border: 2px solid rgb(0, 0, 0);
     text-transform: capitalize;
 }
+select{
+    height: 35px;
+}
 input:focus,select:focus{
     outline: none;
     border: 2px solid rgb(21, 0, 255);
@@ -46,6 +51,7 @@ input:focus,select:focus{
 label{
     font-size: 16px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 a{
     text-decoration: none;
