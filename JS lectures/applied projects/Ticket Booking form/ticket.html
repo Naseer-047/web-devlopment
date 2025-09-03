@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket booker</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <main>
+        <div class="contentbox">
+        <h1>Ticket Booking Form</h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="age">enter your age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required><br><br>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required><br><br>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select><br><br>
+
+           <a href="traindetails.htm" onclick="alert(userName);">See available trains</a>
+        </form>
+        </div>
+    </main>
+    <script src="ticket.js"></script>
+</body>
+</html>
