@@ -15,15 +15,43 @@
     // result=sum(2,2);
     // console.log(result);
 
-   let age=10;
-   function printAge(){
-    console.log(`your age is ${age}`);
+//    let age=10;
+//    function printAge(){
+//     console.log(`your age is ${age}`);
+//    }
+// printAge();
+//    age=20;
+//     printAge();//function calling or invoking
+//     age=30;
+//     printAge();
+
+// function generateRandomMove(){
+//    let random=Math.random();
+//    let randomMove= random * 3;
+//    return randomMove;
+// }
+// let randomMove=generateRandomMove();
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+function determineDriveStatus()
+{
+   let age=prompt('enter your age');
+   if (age=== undefined || age===0 ) {
+      return'aap avatar hai';
    }
-printAge();
-   age=20;
-    printAge();//function calling or invoking
-    age=30;
-    printAge();
-   </script>
+   console.log('checking the age status')
+
+   if (age<18) {
+      status="not eligible to drive";
+   }else{
+      status="eligible to drive";
+   }
+   return status;
+}
+console.log(determineDriveStatus());
+</script>
 </body>
 </html>

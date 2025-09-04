@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice exercise of functions</title>
+</head>
+<body>
+    <script>
+        // function to check wether even or odd number
+        function checkEvenoOddNumber(x){
+            if(x%2==0){
+                console.log("even number");
+            }
+            else{
+                console.log("odd number");      
+            }
+            return x;
+        }
+        checkEvenoOddNumber(1);
+
+        // Function to check largest of two numbers
+        function largestOfTwoNumber(a,b){
+            if(a>b){
+                console.log(` ${a} is largest number`);
+            }
+            else{
+                console.log(` ${b} is largest number`);
+            }
+           
+        }
+        largestOfTwoNumber(10,20);
+        //convert celsius to fahrenheit
+        function celsiusToFahrenheit(c){
+            let f = (c * 9/5) + 32;
+            console.log(`${c} degree celsius is equal to ${f} degree fahrenheit`);
+        }
+        celsiusToFahrenheit(38);
+
+    </script>
+</body>
+</html>
