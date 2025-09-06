@@ -37,6 +37,12 @@ computerChoice= generateComputerChoice();
   ">Stump</button>
   <script>
 
+    let score={
+      win: 0,
+      tie:0,
+      lost:0,
+    };
+    
     let computerChoice;
 
     function generateComputerChoice() {
@@ -55,33 +61,51 @@ computerChoice= generateComputerChoice();
     function getResult(userMove, computerMove) {
       if (userMove === 'bat') {
         if (computerMove === 'ball') {
+          score.win++;
           return 'user won';
         } else if (computerMove === 'stump') {
+          score.lost++
           return 'computer won';
         } else {
+          score.tie++
           return 'it\'s a tie';
         }
       } else if (userMove === 'ball') {
         if (computerMove === 'stump') {
+          score.win++;
           return 'user won';
+         
         } else if (computerMove === 'bat') {
+         score.lost++;
           return 'computer won';
+          
         } else {
+             score.tie++;
           return 'it\'s a tie';
+       
         }
       } else if (userMove === 'stump') {
         if (computerMove === 'bat') {
+          score.win++;
           return 'user won';
         } else if (computerMove === 'ball') {
+          score.lost++;
           return 'computer won';
         } else {
+          score.tie++;
           return 'it\'s a tie';
         }
       }
     }
     function showResult(userMove, computerMove, result) {
-      alert(`You chose ${userMove}. Computer chose ${computerMove}. ${result}`);
+      console.log(score)
+      alert(`You chose ${userMove}. Computer chose ${computerMove}
+      ${result}
+      
+      won:- ${score.win}.  lost:- ${score.lost}  tie:-${score.tie}
+      `);
     }
+
   </script>
 </body>
 
