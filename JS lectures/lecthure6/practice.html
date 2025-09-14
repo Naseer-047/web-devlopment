@@ -7,6 +7,7 @@
             height: 50px;
             width: 50px;
             border: none;
+            border-radius: 5px;
         }
         .js-odd{
             background-color: red;
@@ -21,10 +22,10 @@
 
     <button id="my-button" onclick="buttonPressed();">0</button>
     <script>
-let noOfTimesClicked=0;
+let noOfTimesClicked=localStorage.getItem ('noOfTimesClicked') || 0;
 function buttonPressed() {
 noOfTimesClicked++;
-
+localStorage.setItem('noOfTimesClicked',noOfTimesClicked)
 updatebutton()
 }
 
