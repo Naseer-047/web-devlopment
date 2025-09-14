@@ -104,7 +104,7 @@
       <h1 class="num">0</h1>
     </div>
     <div class="btns">
-      <button class="btn1" onclick="count=count+1;document.querySelector('.num').innerText=count;">Count +1</button>
+      <button class="btn1" onclick="oncount();">Count +1</button>
       <button class="btn2" onclick="count=a-a;document.querySelector('.num').innerText=count;">⟳</button>
     </div>
 
@@ -112,9 +112,13 @@
   </div>
   <script>
     alert('We highly Recomend you to Use this web app in Phones')
-    let count=0;
-    let a=count;
-    document.querySelector('.num').innerText=count;
+    let count=localStorage.getItem('count') ? count===undefined ;
+   
+    function oncount(){
+      document.querySelector('.num').innerText=count;
+      count++;
+      localStorage.setItem('oncount',count)
+    }
   </script>
 </body>
 
