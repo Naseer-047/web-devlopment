@@ -37,6 +37,10 @@ computerChoice= generateComputerChoice();
   ">Stump</button>
   <button onclick="localStorage.clear() 
   resetScore(); " >reset</button>
+  <h3 id="user-move"></h3>
+  <h3 id="computer-move"></h3>
+  <h3 id="result"></h3>
+  <h3 id="score"></h3>
   <script>
 let scoreStr=localStorage.getItem('score');
 let score;
@@ -107,13 +111,14 @@ function resetScore(scoreStr){
       }
     }
     function showResult(userMove, computerMove, result) {
-      localStorage.setItem('score',JSON.stringify(score))
-      console.log(score)
-      alert(`You chose ${userMove}. Computer chose ${computerMove}
-      ${result}
+      localStorage.setItem('score',JSON.stringify(score));
+      document.querySelector('#user-move').innerText=`you have choosen ${userMove}`;
+
+      document.querySelector('#computer-move').innerText=`computer move is ${computerMove}`;
       
-     ${score.displayScore()}
-      `);
+      document.querySelector('#result').innerText=`${result}`;
+      document.querySelector('#score').innerText=score.displayScore();
+      
     }
 
   </script>
