@@ -105,19 +105,21 @@
     </div>
     <div class="btns">
       <button class="btn1" onclick="oncount();">Count +1</button>
-      <button class="btn2" onclick="count=a-a;document.querySelector('.num').innerText=count;">⟳</button>
+      <button class="btn2" onclick="clearScreen()">⟳</button>
     </div>
 
 
   </div>
   <script>
-    alert('We highly Recomend you to Use this web app in Phones')
-    let count=localStorage.getItem('count') ? count===undefined ;
-   
     function oncount(){
-      document.querySelector('.num').innerText=count;
+      let count=localStorage.getItem('oncount')||0 ;
       count++;
+      document.querySelector('.num').innerText=count;
       localStorage.setItem('oncount',count)
+    }
+    function clearScreen() {
+      
+      localStorage.removeItem('oncount')
     }
   </script>
 </body>
