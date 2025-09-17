@@ -112,7 +112,7 @@
   </div>
   <script>
     function oncount(){
-      let count=localStorage.getItem('oncount')||0 ;
+      let count=localStorage.getItem('oncount') ;
       count++;
       document.querySelector('.num').innerText=count;
       localStorage.setItem('oncount',count)
